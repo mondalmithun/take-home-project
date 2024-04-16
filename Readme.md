@@ -30,8 +30,8 @@ How to run the Notebook.
 2. I have used the "MS_2022_Annual_Report.pdf" file as input to create the vector data store.
 3. I have used python packages PyPDF2, langchain, chromadb, langchain-text-splitters and sentence_transformers to implement this excercise
 4. We can use the following things for imporvments
-> We can create summary from every chunks & can store that as metadata in vector store to get better similar vector match.
-> We can try with different indexing techniques apart from the one I used {"hnsw:space"}
-> We can try differnet similarity finds techniques apart from {"cosine"}
+ a. We can create summary from every chunks & can store that as metadata in vector store to get better similar vector match.
+ b. We can try with different indexing techniques apart from the one I used {"hnsw:space"}
+ c. We can try differnet similarity finds techniques apart from {"cosine"}
 
 Thanks!
