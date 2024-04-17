@@ -1,9 +1,11 @@
-Overview
+Overview of the Excercise
+
  The scope of this exercise is to build a simple step within a data pipeline to help with
  data collection and transformation for an AI assistant based system. The primary data
  source will be a PDF document for this pipeline, and multiple documents can be used.
  The objective is that these steps are delivering a RAG based context for the AI assistant
  to answer questions based on the contents within the document(s).
+
  Exercise
  1. Pick a source document or can be a handful of documents that are PDF format.
  This will be the primary data source for this exercise. You can use any PDFs from
@@ -24,14 +26,16 @@ Overview
  Please use any open source tools as necessary for this exercise. The code can be
  delivered via github repo or a zip file.
 
+Implementation can be found here: https://github.com/mondalmithun/take-home-project/blob/main/vector-search-for-pdf.ipynb
 
 How to run the Notebook.
 1. There is an ipython notebook. It contains self explanatory Markdown cells to naviagte through the notebook to complete the this excercise.
 2. I have used the "MS_2022_Annual_Report.pdf" file as input to create the vector data store.
 3. I have used python packages PyPDF2, langchain, chromadb, langchain-text-splitters and sentence_transformers to implement this excercise
 4. We can use the following things for imporvments
- a. We can create summary from every chunks & can store that as metadata in vector store to get better similar vector match.
- b. We can try with different indexing techniques apart from the one I used {"hnsw:space"}
- c. We can try differnet similarity finds techniques apart from {"cosine"}
+    4.a. We can create summary from every chunks & can store that as metadata in vector store to get better similar vector match.
+    4.b. We can try differnet similarity finds techniques apart from {"cosine"} such as the dot product, or Euclidean distance
+    4.c. We can try with different indexing techniques apart from the one I used {"hnsw:space"}
+
 
 Thanks!
